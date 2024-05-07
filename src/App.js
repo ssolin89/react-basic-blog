@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <div className="blackNav">
-        <h4  style={{color:'red'}}>블로그</h4>
+        <h4 style={{color:'red', fontSize:'16px'}}>블로그</h4>
       </div>
       
       <h4>{post}</h4>
