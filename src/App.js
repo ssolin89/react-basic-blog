@@ -15,6 +15,14 @@ import {useState} from "react";
 // 2. useState(보관할 자료)
 // 3. cont [작명,작명]
 
+// state 만드는 이유?
+// 데이터바인딩이 변경되었을때 그 변경사항이 자동으로 html을 바뀌게 해준다.
+// state는 변경이 일어나면 state가 포함된 html을 자동으로 재랜더링 해주기 때문이다.
+
+// state 를 사용하는 곳은?
+// 자주 변경될 것 같은 데이터들은 state에 저장 했다가
+// html에 {데이터바인딩} 해놓기
+
 function App() {
   
   const post = '강남 우동 맛집';
@@ -26,10 +34,10 @@ function App() {
     
     <div className="App">
       <div className="blackNav">
-        <h4 style={{color: 'red', fontSize: '16px'}}>블로그</h4>
+        <h4>ReactLogo</h4>
       </div>
       <div className="list">
-        <h4>글제목</h4>
+        <h4>{글제목}</h4>
         <p>5월 07일 발행</p>
       </div>
       <h4>{post}</h4>
