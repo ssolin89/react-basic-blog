@@ -1,5 +1,10 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+
+
+
+
+
 
 function App() {
   
@@ -12,13 +17,11 @@ function App() {
   //JSX 문법 3
   // style 넣을땐 style= { {스타일명 : '값'} }
   // 오브젝트 형식으로 넣어줌
-
-  
   
   return (
     <div className="App">
       <div className="blackNav">
-        <h4 style={{color:'red', fontSize:'16px'}}>블로그</h4>
+        <h4 style={{color: 'red', fontSize: '16px'}}>블로그</h4>
       </div>
       
       <h4>{post}</h4>
