@@ -26,21 +26,25 @@ import {useState} from "react";
 function App() {
   
   const post = '강남 우동 맛집';
-  const [글제목, b] = useState('남성코트 추천');
+  const [글제목, b] = useState(['남성코트 추천', '강남 우동맛집', '파이썬 독학']);
   
   return (
-    
-    // return  안에는 병렬 태그 사용 금지
-    
     <div className="App">
       <div className="blackNav">
         <h4>ReactLogo</h4>
       </div>
       <div className="list">
-        <h4>{글제목}</h4>
-        <p>5월 07일 발행</p>
+        <h4>{글제목[0]}</h4>
+        <p>2월 17일 발행</p>
       </div>
-      <h4>{post}</h4>
+      <div className="list">
+        <h4>{글제목[1]}</h4>
+        <p>2월 17일 발행</p>
+      </div>
+      <div className="list">
+        <h4>{글제목[2]}</h4>
+        <p>2월 17일 발행</p>
+      </div>
     </div>
   );
 }
